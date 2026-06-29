@@ -2,3 +2,5 @@
 PicturesForWebsite/
 node_modules/
 .claude/settings.local.json
+*.md
+!README.md
