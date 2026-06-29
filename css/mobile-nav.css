@@ -1,0 +1,35 @@
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: var(--color-canvas);
+  display: flex;
+  flex-direction: column;
+  padding: 110px var(--space-xl) var(--space-xl);
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+}
+
+.mobile-nav.is-open {
+  transform: translateY(0);
+}
+
+.mobile-nav > a {
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-ink);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.mobile-nav .mobile-nav-actions {
+  margin-top: var(--space-xxl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+body.nav-open {
+  overflow: hidden;
+}

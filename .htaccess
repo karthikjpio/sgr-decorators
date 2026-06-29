@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect /index.html (and /index.html?query) to the clean root URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html[?\s]
+RewriteRule ^index\.html$ / [R=301,L]
